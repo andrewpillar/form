@@ -123,7 +123,7 @@ func UploadHandler(w http.ResponseWriter, r *http.Request) {
 
     defer dst.Close()
 
-    if _, err := io.Copy(dst, f.Attachment.Name()); err != nil {
+    if _, err := io.Copy(dst, f.Attachment); err != nil {
         // Handle error.
     }
 }
@@ -149,7 +149,7 @@ func StoreAttachment(f *form.File) error {
 
     defer dst.Close()
 
-    _, err = io.Copy(dst, f.Name())
+    _, err = io.Copy(dst, f)
     return err
 }
 
