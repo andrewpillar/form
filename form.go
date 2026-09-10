@@ -72,7 +72,7 @@ func IgnoreUnknownKeys() Option {
 // MaxSize configures the size of slices for URL nested arrays or object arrays.
 func MaxSize(size int) Option {
 	return func(opts *Options) {
-		opts.MaxSize=size
+		opts.MaxSize = size
 	}
 }
 
@@ -530,9 +530,9 @@ func unmarshalFiles(field string, r *http.Request) ([]*File, error) {
 }
 
 const (
-	defaultAliasTag    = "schema"
-	fileTypeName       = "File"
-	maxMemory    int64 = 32 << 20
+	defaultAliasTag       = "schema"
+	fileTypeName          = "File"
+	maxMemory       int64 = 32 << 20
 )
 
 // Unmarshal parses the given request and unmarshals the data into the given
