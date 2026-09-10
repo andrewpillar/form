@@ -226,7 +226,7 @@ This library comes with the following rules out of the box,
 
 * [Required][] - Make sure the field is given a value.
 * [Matches][] - Make sure the field matches the given regex pattern.
-* [Email][[] - Make sure the field matches an email pattern.
+* [Email][] - Make sure the field matches an email pattern.
 * [Length][] - Make sure the field is between the given length.
 * [Equals][] - Make sure the field is equal to another field's value.
 
